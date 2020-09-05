@@ -7,7 +7,7 @@ public class Order {
 
     //  A constructor that initializes the account and an empty collection of items
 public Order(){ }
-this.item = new ArrayList<Order>();
+this.item = new ArrayList<OrderItem>();
 }
 
 
