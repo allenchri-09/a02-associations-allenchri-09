@@ -6,19 +6,36 @@ package associations;
 public class Customer {
 
   // Add instance varables
+    private String fName;
+    private String lName;
+    private String address;
+    private String zip;
+    private Account acct;
 
   //    A constructor that initializes the last name, first name, address, and zip code.
+    public Customer(String fName, String lName, String address, String zip, Account acct){
+        this.fName = fName;
+        this.lName = lName;
+        this.address = address;
+        this.zip = zip;
+        this.acct = acct;
+    }
 
   //    getLastName() - Returns a String that is the customer’s last name
+        public String getLastName(){return lName;}
 
   //    getFirstName() - Returns a String that is the customer’s first name
+        public String getFirstName(){return fName;}
 
   //    getStreetAddress() - Returns a String indicating the customer’s street address
+        public String getStreetAddress(){return address;}
 
   //    getZipCode() - Returns a String indicating the customer’s zip code
+        public String getZipCode(){return zip;}
 
   //    setAccount(Account a) - Sets the Account for this customer
+        public void setAccount(Account acct){this.acct = acct;}
 
   //    getAccount() - Returns a reference to the Account object associated with this customer
-
+        public account getAccount(){return acct;}
 }
